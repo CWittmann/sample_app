@@ -29,11 +29,5 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
     assert_select "title", "Contact | #{@base_title}"
   end
-  
-  test "should get impressum" do
-    get :impressum
-    assert_response :success
-    assert_select "title", "Impressum | #{@base_title}"
-  end
 
 end
